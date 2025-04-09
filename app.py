@@ -10,7 +10,7 @@ import google.generativeai as genai
 from fpdf import FPDF
 from PIL import Image
 
-# Sidebar: Add an input field for the Gemini API Key
+
 api_key = st.sidebar.text_input("Enter your Gemini API Key", type="password")
 
 # Configure the Gemini API Key if provided
@@ -35,7 +35,7 @@ with st.expander("🔍 Enter Player Information (for more accurate report)"):
 
 uploaded_file = st.file_uploader("Upload your playing video", type=["mp4", "avi", "mov"])
 
-logo_path = "TalentLens.png"  # Make sure this path is correct
+logo_path = "TalentLens.png" 
 
 def calculate_speed(prev_coords, curr_coords, time_elapsed):
     if prev_coords and curr_coords:
@@ -145,13 +145,13 @@ def plot_performance(player_speeds, pass_accuracies):
 def clean_text(text):
     """Replace common Unicode characters with their ASCII equivalents"""
     replacements = {
-        '\u2019': "'",  # Right single quotation mark
-        '\u2018': "'",  # Left single quotation mark
-        '\u201c': '"',  # Left double quotation mark
-        '\u201d': '"',  # Right double quotation mark
-        '\u2013': '-',  # En dash
-        '\u2014': '-',  # Em dash
-        '\u2026': '...' # Ellipsis
+        '\u2019': "'", 
+        '\u2018': "'",  
+        '\u201c': '"',  
+        '\u201d': '"',  
+        '\u2013': '-',  
+        '\u2014': '-', 
+        '\u2026': '...' 
     }
     for uni, ascii in replacements.items():
         text = text.replace(uni, ascii)
@@ -161,7 +161,7 @@ def save_report_pdf(report_text, fig, logo_path="TalentLens.png"):
     pdf = FPDF()
     pdf.add_page()
     
-    # Add logo at top right with proper spacing
+    # Add logo at top of generated report
     if os.path.exists(logo_path):
         pdf.image(logo_path, x=150, y=10, w=40)
     
@@ -175,7 +175,7 @@ def save_report_pdf(report_text, fig, logo_path="TalentLens.png"):
     pdf.cell(200, 10, txt=f"Age: {player_age} | Position: {player_position}", ln=True)
     pdf.cell(200, 10, txt=f"Team: {player_team}", ln=True)
     pdf.cell(200, 10, txt=f"Height: {player_height} cm | Weight: {player_weight} kg", ln=True)
-    pdf.ln(10)  # Add some space
+    pdf.ln(10)
     
     # Main report content
     pdf.set_font("Arial", size=12)
@@ -183,7 +183,7 @@ def save_report_pdf(report_text, fig, logo_path="TalentLens.png"):
     for line in cleaned_text.split('\n'):
         try:
             line.encode('latin-1')
-            pdf.multi_cell(0, 8, txt=line)  # Reduced line height for better spacing
+            pdf.multi_cell(0, 8, txt=line)  
         except UnicodeEncodeError:
             safe_line = line.encode('latin-1', 'replace').decode('latin-1')
             pdf.multi_cell(0, 8, txt=safe_line)
