@@ -8,3 +8,9 @@ google-generativeai
 fpdf
 Pillow
 opencv-python-headless==4.7.0.72
+opencv-python-headless==4.9.0.80  
+mediapipe-silicon==0.10.8  # Apple Silicon compatible version 
+google-generativeai>=0.3.0
+streamlit>=1.22.0
+numpy>=1.26.0
+fpdf2>=2.7.4
