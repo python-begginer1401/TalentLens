@@ -35,7 +35,7 @@ with st.expander("🔍 Enter Player Information (for more accurate report)"):
 
 uploaded_file = st.file_uploader("Upload your playing video", type=["mp4", "avi", "mov"])
 
-logo_path = "/Users/safa/Documents/GitHub/TalentLens/TalentLens.png"  # Make sure this path is correct
+logo_path = "TalentLens.png"  # Make sure this path is correct
 
 def calculate_speed(prev_coords, curr_coords, time_elapsed):
     if prev_coords and curr_coords:
