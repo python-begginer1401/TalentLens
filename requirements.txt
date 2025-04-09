@@ -6,4 +6,4 @@ matplotlib
 seaborn
 google-generativeai
 fpdf
-Pillow
+pillow
