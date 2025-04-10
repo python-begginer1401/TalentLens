@@ -79,8 +79,6 @@ TalentLens/
   - Speed and pass accuracy charts
 
 ## 🛡️ Disclaimer
-
-- This is an experimental project and should not be used for professional talent scouting without further validation.
 - Video must be clear with the player visible in motion for accurate results.
 
 ## 📝 License
@@ -89,4 +87,4 @@ MIT License
 
 ---
 
-Created with 💡 by [Your Name]
+Created with 💡 by [The TalentLens Team]
