@@ -1,90 +1,101 @@
+🎯 TalentLens: AI-Powered Player Analysis
+Welcome to TalentLens, an AI-powered tool designed to analyze soccer player performance from videos. Whether you're a coach, scout, or a player, TalentLens helps evaluate player speed, pass accuracy, and generates a detailed scouting report using Google's Gemini AI.
 
-# TalentLens: AI-Powered Player Analysis 🧠⚽
+🚀 Features
+🎥 Upload your playing video and let the AI do the rest
 
-TalentLens is an interactive web application built with Streamlit that leverages AI and computer vision to analyze a soccer player's performance from video footage. It provides real-time metrics like player speed and pass accuracy, and generates a comprehensive scouting report using Google Gemini AI.
+📊 Analyze average speed and passing accuracy
 
-## 🚀 Features
+🤖 Generate detailed scouting reports using Gemini
 
-- 📹 Upload player video for performance analysis
-- 🧍‍♂️ Uses MediaPipe for pose detection and motion tracking
-- 📊 Real-time stats on speed and pass accuracy
-- 🤖 AI-generated player scouting report via Gemini Pro
-- 📝 Downloadable PDF report with visual charts and player profile
+📈 Visualize performance with charts
 
-## 🧰 Tech Stack
+📄 Export your report as a downloadable PDF
 
-- **Frontend/UI**: Streamlit
-- **AI Model**: Gemini Pro via `google.generativeai`
-- **Pose Estimation**: MediaPipe
-- **Visualization**: Matplotlib & Seaborn
-- **PDF Report Generation**: FPDF
+🛠️ Tech Stack
+Streamlit for the user interface
 
-## 📦 Installation
+OpenCV + MediaPipe for video and pose analysis
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/yourusername/TalentLens.git
-    cd TalentLens
-    ```
+Gemini (Generative AI) for natural language scouting reports
 
-2. **Install dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+Matplotlib & Seaborn for performance charts
 
-3. **Set up your Gemini API key**:  
-    The app requires a Gemini API key to generate the scouting report. Get it from [Google AI Studio](https://makersuite.google.com/) and paste it in the sidebar when running the app.
+FPDF for report generation
 
-## ▶️ Run the App
+Pillow and NumPy for image and number handling
 
-```bash
+🔑 Gemini API Key Setup
+To use the AI-generated report feature, you'll need a Google Gemini API key.
+Once you have it:
+
+Launch the app
+
+Enter your API key in the sidebar
+
+Start uploading and analyzing videos!
+
+💻 How to Use
+Clone the repo
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/TalentLens.git
+cd TalentLens
+Install the required packages
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Run the app
+
+bash
+Copy
+Edit
 streamlit run app.py
-```
+Use the Web Interface
 
-## 📁 Directory Structure
+Input player details
 
-```
-TalentLens/
-│
-├── app.py                    # Main Streamlit application
-├── requirements.txt          # Python dependencies
-├── TalentLens.png            # App logo used in reports
-├── README.md                 # You're reading this!
-└── AI_Player_Report.pdf      # Example output report
-```
+Upload a short soccer video (e.g., 5-10 seconds)
 
-## 📑 Input Form Fields
+Review the generated AI report and visual performance charts
 
-- **Player Name**  
-- **Age** (10-50)  
-- **Position** (Forward, Midfielder, Defender, Goalkeeper)  
-- **Height** (cm) & Weight (kg)  
-- **Team Name**  
-- **Match Video** (.mp4, .avi, .mov)
+Download a clean PDF version of the report
 
-## 🧠 AI Scouting Report Sections
+📂 Sample Output
+📑 AI Scouting Report
 
-- Player Profile Summary
-- Performance Analysis
-- Technical Strengths
-- Areas for Improvement
-- Position-Specific Recommendations
-- Overall Potential Assessment
+📊 Player speed & pass accuracy chart
 
-## 📄 Example Output
+✅ Downloadable PDF with all data and charts
 
-- Downloadable PDF with:
-  - Player info
-  - AI-generated analysis
-  - Speed and pass accuracy charts
+🧠 How It Works
+MediaPipe identifies hip joint movement to estimate speed
 
-## 🛡️ Disclaimer
-- Video must be clear with the player visible in motion for accurate results.
+A mock AI logic estimates pass accuracy
 
-## 📝 License
+Google's Gemini model writes a personalized scouting report
 
-MIT License
+You can export everything into a structured and branded PDF
 
----
+📎 Notes
+Video length: Keep it short (~5-10 seconds) for faster processing
 
-Created with 💡 by [The TalentLens Team]
+Current version supports basic performance metrics; future versions may include:
+
+Dribble analysis
+
+Defense stats
+
+Team synergy insights
+
+📃 License
+This project is open-source. Feel free to fork and adapt it for your needs (mention us if you do!).
+
+🙌 Author
+Built with 💡 by [Your Name]
+If you enjoy this tool, consider giving it a ⭐ on GitHub!
+
