@@ -94,5 +94,5 @@ streamlit run app.py
 
 ## 🙌 Author
 
-Built with 💡 by [The TalentLens team]  
+Built with 💡 by The TalentLens team
 If you enjoy this tool, consider giving it a ⭐ on GitHub!
