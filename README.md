@@ -4,7 +4,7 @@ Welcome to **TalentLens**, an AI-powered tool designed to analyze soccer player 
 
 ---
 
-## 🚀 Features
+## Features
 
 - 🎥 Upload your playing video and let the AI do the rest  
 - 📊 Analyze average speed and passing accuracy  
@@ -36,7 +36,7 @@ Once you have it:
 
 ---
 
-## 💻 How to Use
+## How to Use
 
 1. **Clone the repo**
 
@@ -65,7 +65,7 @@ streamlit run app.py
 
 ---
 
-## 📂 Sample Output
+## Sample Output
 
 - 📑 AI Scouting Report
 - 📊 Player speed & pass accuracy chart
@@ -73,10 +73,10 @@ streamlit run app.py
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 - MediaPipe identifies hip joint movement to estimate **speed**
-- A mock AI logic estimates **pass accuracy**
+- An AI logic estimates **pass accuracy**
 - Google's Gemini model writes a **personalized scouting report**
 - You can **export** everything into a structured and branded PDF
 
@@ -92,13 +92,7 @@ streamlit run app.py
 
 ---
 
-## 📃 License
-
-This project is open-source. Feel free to fork and adapt it for your needs (mention us if you do!).
-
----
-
 ## 🙌 Author
 
-Built with 💡 by [Your Name]  
+Built with 💡 by [The TalentLens team]  
 If you enjoy this tool, consider giving it a ⭐ on GitHub!
