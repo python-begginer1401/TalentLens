@@ -7,3 +7,5 @@ seaborn
 google-generativeai
 fpdf
 Pillow
+opencv-python
+
